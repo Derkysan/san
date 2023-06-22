@@ -44,7 +44,7 @@ export default function Home() {
             className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray- text-white hover:text-[#F07D00] transition-all duration-300 ease-in-out" 
             href="https://www.linkedin.com/in/derkysan/" 
             target="_blank">
-              <FontAwesomeIcon icon={faLinkedinIn} size="md" />
+              <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </motion.li>
       </ul>
