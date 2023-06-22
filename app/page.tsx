@@ -17,7 +17,7 @@ export default function Home() {
         <motion.div 
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          exit={{ opacity: 0 }} 
+          exit={{ opacity: 0 }}
         >
           <h2 className="uppercase text-[60px] leading-[55px] font-extralight mb-4" style={{ fontFamily: "var(--font-inter)" }}>San</h2>
           <p className="uppercase text-[10px] leading-[10px] tracking-[7px] px-1">Front-end developer</p>
