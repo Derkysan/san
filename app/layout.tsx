@@ -1,3 +1,4 @@
+import Navigation from '@/components/Navigation'
 import './globals.css'
 import { Inter, Titillium_Web } from 'next/font/google'
 
@@ -22,9 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${titillium.variable} flex flex-col h-screen`}>
+      <body className={`${inter.className} ${titillium.variable}`}>
+        <Navigation />
         <div className="border hidden"></div>
-        <div className="flex grow">{children}</div>
+        {children}
         <div className="border hidden"></div>
       </body>
     </html>
