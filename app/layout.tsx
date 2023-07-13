@@ -14,24 +14,24 @@ const titillium = Titillium_Web({
 export const metadata = {
   openGraph: {
     title: 'Derkysan',
-  description: 'Front-end developer',
+    description: 'Front-end developer',
     url: 'https://nextjs.org',
-    siteName: 'Next.js',
-    images: [
-      {
-        url: '../og-image.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: '../og-image.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
+    siteName: 'Derkysan',
+    // images: [
+    //   {
+    //     url: '../og-image.png',
+    //     width: 800,
+    //     height: 600,
+    //   },
+    //   {
+    //     url: '../og-image.png',
+    //     width: 1800,
+    //     height: 1600,
+    //     alt: 'My custom alt',
+    //   },
+    // ],
+    // locale: 'en_US',
+    // type: 'website',
   },
 }
 
