@@ -14,6 +14,9 @@ const titillium = Titillium_Web({
 export const metadata = {
   title: 'Derkysan',
   description: 'Front-end developer',
+  openGraph: {
+    images: '/og-image.png',
+  },
 }
 
 export default function RootLayout({
