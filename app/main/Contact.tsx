@@ -7,7 +7,7 @@ import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 const Contact = () => {
   return (
     <div id="contact" className="flex border border-main-color border-b-0">
-      <div className="grow w-[50%] p-5 border-r border-main-color">
+      <div className="grow w-[50%] p-5 border-r border-main-color border-l-0 border-e-0">
         <div className="flex-grow gap-2 items-center flex justify-end"> 
           <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full text-lg">
             <FontAwesomeIcon icon={ faLocationDot } />
