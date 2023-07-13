@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
   // path: 'https://avatars.githubusercontent.com/',
   images: {
     unoptimized: true
