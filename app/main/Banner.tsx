@@ -78,13 +78,13 @@ const Banner = ({ user }: Props) => {
 
           <div className="w-[100%] flex mt-5">
             <div className="w-[100%] md:w-[40%]">
-              <motion.p 
+              {/* <motion.p 
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.5 }}
                 className="text-lg font-extralight dark:text-zinc-300" style={{ fontFamily: "var(--font-titillium)" }}>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quae deserunt rerum minima natus! Harum ullam perspiciatis quaerat rem iusto!
-              </motion.p>
+              </motion.p> */}
               <ul className="flex gap-8 mt-4 md:gap-6">
                 <motion.li 
                   initial={{ y: -25, opacity: 0 }}
