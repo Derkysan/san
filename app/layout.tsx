@@ -12,21 +12,19 @@ const titillium = Titillium_Web({
 })
 
 export const metadata = {
-  title: 'Derkysan',
-  description: 'Front-end developer',
   openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
+    title: 'Derkysan',
+  description: 'Front-end developer',
     url: 'https://nextjs.org',
     siteName: 'Next.js',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
+        url: './og-image.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png',
+        url: './og-image.png',
         width: 1800,
         height: 1600,
         alt: 'My custom alt',
