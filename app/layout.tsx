@@ -13,9 +13,9 @@ const titillium = Titillium_Web({
 
 export const metadata = {
   openGraph: {
-    title: 'Derkysan',
+    title: '*Derkysan',
     description: 'Front-end developer',
-    url: 'https://nextjs.org',
+    // url: 'https://nextjs.org',
     siteName: 'Derkysan',
     // images: [
     //   {
