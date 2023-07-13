@@ -25,3 +25,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+body {
+  background-color: #181a1f;
+  color: #ebebeb;
+}
+
+.border-main-color {
+  border-color:#484848;
+}

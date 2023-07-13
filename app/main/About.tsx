@@ -1,33 +1,35 @@
 import React from 'react';
 
 import styles from './styles.module.scss';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faAngular, faCss3, faHtml5, faJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
+import Image from 'next/image';
 
-const About = () => {
+const About = ( { avatar }: { avatar: string } ) => {
   return (
-    <div className={`${styles['about-wrapper']} bg-gray-100 py-10`}>
-      <div className="p-20 ">
+    <div id="about" className={`${styles['about-wrapper']} py-20 flex justify-center`}>
+      <div className="container flex items-center justify-center">
 
-        <div className="flex flex-col gap-12 justify-center mb-3 md:flex-row">
-          <div className="w-[100%] shrink-0 flex md:justify-end md:w-[25%]">
-            <div className={styles['picture']}></div>
+        <div className="flex flex-col gap-8 mb-3 w-[90%] md:w-[100%] md:flex-row md:justify-center">
+          <div className="flex md:justify-end">
+            <div className={`${styles['picture']} mt-14 dark:border`}>
+              <Image src="https://avatars.githubusercontent.com/u/11494389?v=4" width={150} height={150} alt="user-avatar" />
+            </div>
           </div>
-          <div className="w-[100%] shrink-0 md:w-[30%]">
-            <h2 style={{ fontFamily: "var(--font-titillium)" }} className="text-4xl mb-5">About</h2>
-            <p className="text-[18px] text-gray-800 mb-4" style={{ fontFamily: "var(--font-titillium)" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet.</p>
-            <p className="text-[18px] text-gray-800" style={{ fontFamily: "var(--font-titillium)" }}>Doloribus, dolore facere eum maiores architecto aliquam nobis voluptates saepe similique assumenda necessitatibus consequuntur, ea impedit quod nostrum nulla provident quos velit</p>
+          <div className="shrink-0 md:w-[30%]">
+            <h2 style={{ fontFamily: "var(--font-titillium)" }} className="text-2xl font-[600] mb-5 dark:text-gray-300">About</h2>
+            <p className="text-[18px] font-extralight mb-4 dark:text-gray-300" style={{ fontFamily: "var(--font-titillium)" }}>Hi, I&apos;m Derky, Frontend Developer currently linving in Santiago de Chile, with knowledge on HTML, CSS, Javascript, skills to work with SASS, Angular, React; quick learning and interested in continous training and open to collaborating on interesting projects as a developer.</p>
 
             <div className="flex gap-5 mt-10 items-center">
-              <span className="text-xs uppercase tracking-wide">Tech Stack</span>
+              <span className={`text-xs uppercase tracking-wide dark:text-gray-300 ${styles['text-gradient']}`}>Tech Stack</span>
               <ul className="flex gap-5 text-2xl border-l border-gray-500 ps-6">
-                <li><FontAwesomeIcon icon={faReact} /></li>
-                <li><FontAwesomeIcon icon={faAngular} /></li>
-                <li><FontAwesomeIcon icon={faSass} /></li>
-                <li><FontAwesomeIcon icon={faHtml5} /></li>
-                <li><FontAwesomeIcon icon={faCss3} /></li>
-                <li><FontAwesomeIcon icon={faJs} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faHtml5} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faCss3} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faJs} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faReact} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faAngular} /></li>
+                <li className="text-[#999999]"><FontAwesomeIcon icon={faSass} /></li>
               </ul>
             </div>
           </div>

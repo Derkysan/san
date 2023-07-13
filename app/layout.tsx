@@ -8,7 +8,7 @@ const titillium = Titillium_Web({
   subsets: ['latin'],
   variable: '--font-titillium',
   display: 'swap',
-  weight: '200'
+  weight: ['200', '300', '400', '600', '700', '900']
 })
 
 export const metadata = {
@@ -25,9 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${titillium.variable}`}>
         <Navigation />
-        <div className="border hidden"></div>
         {children}
-        <div className="border hidden"></div>
       </body>
     </html>
   )
