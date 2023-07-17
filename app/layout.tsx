@@ -25,12 +25,12 @@ export const metadata = {
         width: 800,
         height: 600,
       },
-      // {
-      //   url: '../public/opengraph-image.png',
-      //   width: 1800,
-      //   height: 1600,
-      //   alt: 'My custom alt',
-      // },
+      {
+        url: '../public/opengraph-image.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Derkysan',
+      },
     ],
     locale: 'en_US',
     type: 'website',
