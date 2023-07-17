@@ -16,7 +16,18 @@ interface Props {
 const Banner = ({ user }: Props) => {
 
   return (
-    <div className={`${styles['banner-wrapper']}`}>
+    <motion.div 
+    className={`${styles['banner-wrapper']}`}
+    initial={{
+      borderBottom: 0
+    }}
+    animate={{
+      borderBottom: '1px solid #484848'
+    }}
+    transition={{
+      delay: 2
+    }}
+    >
 
       <div className="container w-[80%]">
 
@@ -120,7 +131,7 @@ const Banner = ({ user }: Props) => {
       </div>
 
 
-    </div>
+    </motion.div>
   )
 }
 

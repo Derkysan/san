@@ -5,10 +5,18 @@ import styles from './styles.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faHtml5, faJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const About = ( { avatar }: { avatar: string } ) => {
   return (
-    <div id="about" className={`${styles['about-wrapper']} py-20 flex justify-center`}>
+    <motion.div 
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: 'auto', opacity: 1 }}
+      transition={{
+        delay: 2
+      }}
+      id="about" 
+      className={`${styles['about-wrapper']} py-20 flex justify-center`}>
       <div className="container flex items-center justify-center">
 
         <div className="flex flex-col gap-8 mb-3 w-[90%] md:w-[100%] md:flex-row md:justify-center">
@@ -36,7 +44,7 @@ const About = ( { avatar }: { avatar: string } ) => {
         </div>
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 
