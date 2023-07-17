@@ -47,7 +47,7 @@ const Banner = ({ user }: Props) => {
                 !user 
                   ? (
                       <code>
-                        Hi viewer! 
+                        Hi, Welcome!
                         <motion.div 
                           className="inline-block ml-2" 
                           initial={{
