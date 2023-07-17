@@ -3,12 +3,10 @@ import { useEffect, useState } from 'react';
 
 import Banner from './main/Banner';
 import About from './main/About';
-// import Works from './main/Works';
 import Contact from './main/Contact';
 import Footer from '../components/Footer';
 
 import { GithubUser } from './model';
-import Navigation from '@/components/Navigation';
 import { motion } from 'framer-motion';
 
 const USER_GITHUB_API = 'https://api.github.com/users/Derkysan';
@@ -44,7 +42,6 @@ export default function Home() {
       delay: 2
     }}
     >
-      <Navigation />
       <Banner user={ user! } />
       <About avatar={ avatar_url } />
       <Contact />
