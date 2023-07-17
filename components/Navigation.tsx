@@ -1,11 +1,24 @@
+'use client'
 import React from 'react';
 
 import styles from './styles.module.scss';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Navigation = () => {
   return (
-    <div className={`${styles['navigation']} dark:shadow-white`}>
+    <motion.div 
+      initial={{
+        visibility: 'hidden'
+      }}
+      animate={{
+        visibility: 'visible'
+      }}
+      transition={{
+        delay: 2
+      }}
+      className={`${styles['navigation']} dark:shadow-white`}
+      >
       <div className={`${styles['logo']} dark:text-gray-200`}>
         <Link href={'/san'}>Derkysan</Link>
       </div>
@@ -27,7 +40,7 @@ const Navigation = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div> */}
-    </div>
+    </motion.div>
   )
 }
 

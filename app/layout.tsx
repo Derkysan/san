@@ -12,9 +12,11 @@ const titillium = Titillium_Web({
 })
 
 export const metadata = {
+  title: 'Derkysan | Front-end developer',
+  description: 'Check out my website!',
   openGraph: {
     title: 'Derkysan | Front-end developer',
-    description: 'Welcome to my website!',
+    description: 'Check out my website!',
     url: 'https://derkysan.github.io/san/',
     siteName: 'Derkysan',
     images: [
@@ -23,12 +25,12 @@ export const metadata = {
         width: 800,
         height: 600,
       },
-      {
-        url: '../public/opengraph-image.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
-      },
+      // {
+      //   url: '../public/opengraph-image.png',
+      //   width: 1800,
+      //   height: 1600,
+      //   alt: 'My custom alt',
+      // },
     ],
     locale: 'en_US',
     type: 'website',
