@@ -30,20 +30,20 @@ export default function Home() {
   }, []);
 
   return (
-    <motion.div
-      style={{
-        height: '100vh'
-      }}
-      initial={{
-        overflow: 'hidden'
-      }}
-      animate={{
-        overflow: 'auto'
-      }}
-      transition={{
-        delay: 2
-      }}
-      >
+    <motion.div 
+    style={{
+      height: '100vh',
+    }}
+    initial={{
+      overflow: 'hidden'
+    }}
+    animate={{
+      overflow: 'auto'
+    }}
+    transition={{
+      delay: 2
+    }}
+    >
       <Navigation />
       <Banner user={ user! } />
       <About avatar={ avatar_url } />
