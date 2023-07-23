@@ -1,6 +1,9 @@
+import Script from 'next/script'
+
 import Navigation from '@/components/Navigation'
-import './globals.css'
 import { Inter, Titillium_Web } from 'next/font/google'
+import './globals.css'
+import { GTMnoscript, GTMscript } from '@/components/GtmScript'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,9 +48,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${titillium.variable}`}>
+        <GTMnoscript />
         <Navigation />
         {children}
       </body>
+      <GTMscript />
     </html>
   )
 }
