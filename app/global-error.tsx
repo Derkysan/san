@@ -1,7 +1,10 @@
+'use client'
 import React from 'react'
 
-export const globalError = () => {
+const globalError = () => {
   return (
     <div>globalError</div>
   )
 }
+
+export default globalError

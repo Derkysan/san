@@ -29,13 +29,12 @@ export default function Home() {
 
   return (
     <motion.div 
-    style={{
-      height: '100vh',
-    }}
     initial={{
+      height: '100vh',
       overflow: 'hidden'
     }}
     animate={{
+      height: 'auto',
       overflow: 'auto'
     }}
     transition={{
