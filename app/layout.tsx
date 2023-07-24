@@ -48,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_MEASUREMENT_ID={'G-69RX759FMY'} />
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-69RX759FMY" />
       <body className={`${inter.className} ${titillium.variable}`}>
         <GTMnoscript />
         <Navigation />
