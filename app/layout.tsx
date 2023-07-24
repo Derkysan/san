@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation'
 import { Inter, Titillium_Web } from 'next/font/google'
 import './globals.css'
 import { GTMnoscript, GTMscript } from '@/components/GtmScript'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,6 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_MEASUREMENT_ID={'G-69RX759FMY'} />
       <body className={`${inter.className} ${titillium.variable}`}>
         <GTMnoscript />
         <Navigation />
