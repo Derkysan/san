@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/san',
+  // basePath: '/san',
   // path: 'https://avatars.githubusercontent.com/',
-  // images: {
-    // unoptimized: true
+  images: {
+    unoptimized: true
     // remotePatterns: [
     //   {
     //     protocol: 'https',
@@ -13,7 +13,7 @@ const nextConfig = {
     //     pathname: '/**',
     //   },
     // ],
-  // },
+  },
 }
 
 module.exports = nextConfig
