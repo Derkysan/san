@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 
 const USER_GITHUB_API = 'https://api.github.com/users/Derkysan';
 
-export default function Home() {
+export default function Page() {
 
   const [user, setUser] = useState<GithubUser>();
   const avatar_url = user ? user.avatar_url : '';
