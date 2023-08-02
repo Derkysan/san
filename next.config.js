@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // basePath: '/san',
+  basePath: '/san',
   // path: 'https://avatars.githubusercontent.com/',
   images: {
     unoptimized: true
