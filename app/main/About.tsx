@@ -27,7 +27,7 @@ const About = ( { avatar }: { avatar: string } ) => {
           </div>
           <div className="shrink-0 md:w-[30%]">
             <h2 style={{ fontFamily: "var(--font-titillium)" }} className="text-2xl font-[600] mb-5 dark:text-gray-300">About</h2>
-            <p className="text-[18px] font-extralight mb-4 dark:text-gray-300" style={{ fontFamily: "var(--font-titillium)" }}>Hi, I&apos;m Derky, Frontend Developer currently linving in Santiago de Chile, with knowledge on HTML, CSS, Javascript, skills to work with SASS, Angular, React; quick learning and interested in continous training and open to collaborating on interesting projects as a developer.</p>
+            <p className="text-[18px] font-extralight mb-4 dark:text-gray-300" style={{ fontFamily: "var(--font-titillium)" }}>Hi, I&apos;m Derky, Front-end Developer currently linving in Santiago de Chile, with knowledge on HTML, CSS, Javascript, skills to work with SASS, Angular, React; quick learning and interested in continous training and open to collaborating on interesting projects as a developer.</p>
 
             <div className="flex gap-5 mt-10 items-center">
               <span className={`text-xs uppercase tracking-wide dark:text-gray-300 ${styles['text-gradient']}`}>Tech Stack</span>
