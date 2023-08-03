@@ -20,7 +20,7 @@ const Navigation = () => {
       className={`${styles['navigation']} dark:shadow-white`}
       >
       <div className={`${styles['logo']} dark:text-gray-200`}>
-        <Link href="/">Derkysan</Link>
+        <Link href="https://derkysan.github.io/san/">Derkysan</Link>
       </div>
       <ul className={`${styles['menu']} hidden md:flex`}>
         {/* <li>
