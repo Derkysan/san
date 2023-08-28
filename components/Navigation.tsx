@@ -1,16 +1,26 @@
+'use client'
 import React from 'react';
 
 import styles from './styles.module.scss';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
-// import { faSun } from '@fortawesome/free-regular-svg-icons';
+import { motion } from 'framer-motion';
 
 const Navigation = () => {
   return (
-    <div className={`${styles['navigation']} dark:shadow-white`}>
+    <motion.div 
+      initial={{
+        visibility: 'hidden'
+      }}
+      animate={{
+        visibility: 'visible'
+      }}
+      transition={{
+        delay: 2
+      }}
+      className={`${styles['navigation']} dark:shadow-white`}
+      >
       <div className={`${styles['logo']} dark:text-gray-200`}>
-        <Link href={'/'}>Derkysan</Link>
+        <Link href="/">Derkysan</Link>
       </div>
       <ul className={`${styles['menu']} hidden md:flex`}>
         {/* <li>
@@ -30,7 +40,7 @@ const Navigation = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div> */}
-    </div>
+    </motion.div>
   )
 }
 
