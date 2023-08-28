@@ -16,6 +16,7 @@ const titillium = Titillium_Web({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://derkysan.github.io/san'),
   title: 'Derkysan | Front-end developer',
   description: 'Check out my website!',
   openGraph: {

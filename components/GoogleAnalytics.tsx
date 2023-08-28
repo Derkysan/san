@@ -20,7 +20,17 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_
 
   return (
     <>
-      <Script strategy= "afterInteractive" src = {`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+      <Script src={ `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}` } />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${ GA_MEASUREMENT_ID}' );
+        `}
+      </Script>
+      {/* <Script strategy= "afterInteractive" src = {`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
       <Script 
         id='google-analytics' 
         strategy="afterInteractive" 
@@ -39,6 +49,6 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_
             });
             `,
           }}
-      />
+      /> */}
     </>
 )}
